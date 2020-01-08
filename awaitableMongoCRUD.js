@@ -414,7 +414,7 @@ function updateManyAsync(db, collectionKey, selector, updateQuery, options) {
  * @param {Object=} options Optional settings.
  * @return {Promise<CommandResult>} Returns a promise of removing the database entry.
  */
-function deleteOneAsync(db, collectionKey, selector) {
+function deleteOneAsync(db, collectionKey, selector, options) {
     // Return the promise of removing the database entry.
     return new Promise((resolve, reject) => {
         // If options parameter has been provided ..
@@ -455,7 +455,7 @@ function deleteOneAsync(db, collectionKey, selector) {
  * @param {Object=} options Optional settings.
  * @return {Promise<CommandResult>} Returns a promise of removing the database entries.
  */
-function deleteManyAsync(db, collectionKey, selector) {
+function deleteManyAsync(db, collectionKey, selector, options) {
     // Return the promise of removing the database entries.
     return new Promise((resolve, reject) => {
         // If options parameter has been provided
